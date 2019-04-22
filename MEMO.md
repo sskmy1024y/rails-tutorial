@@ -36,3 +36,9 @@ class Micropost < ApplicationRecord
 end
 ```
 
+## Chapter3
+### 1. 静的なPageコントローラを生成
+
+```bash
+$ docker-compose run web rails generate controller StaticPages home help
+```
