@@ -42,3 +42,13 @@ end
 ```bash
 $ docker-compose run web rails generate controller StaticPages home help
 ```
+
+### 2. ルーティングを設定
+
+```ruby : config/routes.rb
+ Rails.application.routes.draw do
+  get  'static_pages/home' #<- 新しいページ
+  get  'static_pages/help'
+  root 'application#hello'
+  end
+```
